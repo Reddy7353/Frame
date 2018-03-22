@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[HomePage is displayed]]>
+    </line>
+    <line>
+      <![CDATA[testValidloginis PASSED]]>
+    </line>
+    <line>
+      <![CDATA[Username or Password is invalid. Please try again.]]>
+    </line>
+    <line>
+      <![CDATA[Username or Password is invalid. Please try again.]]>
+    </line>
+    <line>
+      <![CDATA[Username or Password is invalid. Please try again.]]>
+    </line>
+    <line>
+      <![CDATA[Username or Password is invalid. Please try again.]]>
+    </line>
+    <line>
+      <![CDATA[testInvlidLoginis PASSED]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="50598" started-at="2018-03-22T10:50:37Z" finished-at="2018-03-22T10:51:27Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="50598" started-at="2018-03-22T10:50:37Z" finished-at="2018-03-22T10:51:27Z">
+      <class name="script.TestInvalidLogin">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:script.TestInvalidLogin@3dfc5fb8]" name="openApp" is-config="true" duration-ms="6871" started-at="2018-03-22T10:51:04Z" finished-at="2018-03-22T10:51:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="testInvlidLogin()[pri:2, instance:script.TestInvalidLogin@3dfc5fb8]" name="testInvlidLogin" duration-ms="14885" started-at="2018-03-22T10:51:10Z" finished-at="2018-03-22T10:51:25Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Username or Password is invalid. Please try again.]]>
+            </line>
+            <line>
+              <![CDATA[Username or Password is invalid. Please try again.]]>
+            </line>
+            <line>
+              <![CDATA[Username or Password is invalid. Please try again.]]>
+            </line>
+            <line>
+              <![CDATA[Username or Password is invalid. Please try again.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvlidLogin -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestInvalidLogin@3dfc5fb8]" name="closeApp" is-config="true" duration-ms="2082" started-at="2018-03-22T10:51:25Z" finished-at="2018-03-22T10:51:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvlidLogin status=SUCCESS method=TestInvalidLogin.testInvlidLogin()[pri:2, instance:script.TestInvalidLogin@3dfc5fb8] output=Username or Password is invalid. Please try again.]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testInvlidLoginis PASSED]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.TestInvalidLogin -->
+      <class name="script.TestValidLogin">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:script.TestValidLogin@3cb1ffe6]" name="openApp" is-config="true" duration-ms="16445" started-at="2018-03-22T10:50:37Z" finished-at="2018-03-22T10:50:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="testValidlogin()[pri:1, instance:script.TestValidLogin@3cb1ffe6]" name="testValidlogin" duration-ms="7975" started-at="2018-03-22T10:50:53Z" finished-at="2018-03-22T10:51:01Z">
+          <reporter-output>
+            <line>
+              <![CDATA[HomePage is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidlogin -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestValidLogin@3cb1ffe6]" name="closeApp" is-config="true" duration-ms="2313" started-at="2018-03-22T10:51:01Z" finished-at="2018-03-22T10:51:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidlogin status=SUCCESS method=TestValidLogin.testValidlogin()[pri:1, instance:script.TestValidLogin@3cb1ffe6] output=HomePage is displayed]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testValidloginis PASSED]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- script.TestValidLogin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
