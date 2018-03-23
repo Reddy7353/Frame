@@ -48,7 +48,7 @@ public class ActiTIMEUserListPage {
 	
 	public void clickcreateuser()
 	{
-		clickcreateuser.click();;
+		clickcreateuser.click();
 	}
 	
 }
