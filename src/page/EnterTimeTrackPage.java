@@ -1,6 +1,8 @@
 package page;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,9 +16,16 @@ import generic.IAutoConst;
 
 public class EnterTimeTrackPage implements IAutoConst{
 
-	
-	 public EnterTimeTrackPage(WebDriver driver) {
+     @FindBy(xpath="//div[.='USERS']/..")
+     private WebElement userslink;
+     
+      public EnterTimeTrackPage(WebDriver driver) {
 		 PageFactory.initElements(driver, this);
+	 }
+	 public void clickUsers()
+	 {
+		 userslink.sendKeys(Keys.ENTER);
+	
 	 }
 	public void verifyHomePageIsDisplayed(WebDriver driver,String eTitle) {
 		String strETO = AutoUtil.getPropertyValue(CONFIG_PATH,"ETO");

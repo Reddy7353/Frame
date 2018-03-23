@@ -1,55 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="4" total="6" passed="2">
   <reporter-output>
     <line>
-      <![CDATA[HomePage is displayed]]>
+      <![CDATA[createuseris PASSED]]>
     </line>
     <line>
-      <![CDATA[testValidloginis PASSED]]>
-    </line>
-    <line>
-      <![CDATA[HomePage is displayed]]>
-    </line>
-    <line>
-      <![CDATA[testValidloginis PASSED]]>
-    </line>
-    <line>
-      <![CDATA[Username or Password is invalid. Please try again.]]>
-    </line>
-    <line>
-      <![CDATA[Username or Password is invalid. Please try again.]]>
-    </line>
-    <line>
-      <![CDATA[Username or Password is invalid. Please try again.]]>
-    </line>
-    <line>
-      <![CDATA[Username or Password is invalid. Please try again.]]>
-    </line>
-    <line>
-      <![CDATA[Username or Password is invalid. Please try again.]]>
-    </line>
-    <line>
-      <![CDATA[Username or Password is invalid. Please try again.]]>
-    </line>
-    <line>
-      <![CDATA[Username or Password is invalid. Please try again.]]>
-    </line>
-    <line>
-      <![CDATA[testInvlidLoginis PASSED]]>
-    </line>
-    <line>
-      <![CDATA[Username or Password is invalid. Please try again.]]>
-    </line>
-    <line>
-      <![CDATA[testInvlidLoginis PASSED]]>
+      <![CDATA[createuseris PASSED]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="50069" started-at="2018-03-23T06:39:08Z" finished-at="2018-03-23T06:39:58Z">
+  <suite name="Suite" duration-ms="33762" started-at="2018-03-23T08:44:52Z" finished-at="2018-03-23T08:45:26Z">
     <groups>
     </groups>
-    <test name="TestOnFirefox" duration-ms="50022" started-at="2018-03-23T06:39:08Z" finished-at="2018-03-23T06:39:58Z">
-      <class name="script.TestInvalidLogin">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestInvalidLogin@38bc8ab5]" name="openApp" is-config="true" duration-ms="14314" started-at="2018-03-23T06:39:26Z" finished-at="2018-03-23T06:39:41Z">
+    <test name="TestOnFirefox" duration-ms="30572" started-at="2018-03-23T08:44:52Z" finished-at="2018-03-23T08:45:23Z">
+      <class name="script.TestCreateUser">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestCreateUser@23d2a7e8]" name="openApp" is-config="true" duration-ms="16400" started-at="2018-03-23T08:44:52Z" finished-at="2018-03-23T08:45:08Z">
           <params>
             <param index="0">
               <value>
@@ -58,87 +22,36 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testInvlidLogin()[pri:2, instance:script.TestInvalidLogin@38bc8ab5]" name="testInvlidLogin" duration-ms="17322" started-at="2018-03-23T06:39:41Z" finished-at="2018-03-23T06:39:58Z">
+        <test-method status="PASS" signature="createuser()[pri:3, instance:script.TestCreateUser@23d2a7e8]" name="createuser" duration-ms="13951" started-at="2018-03-23T08:45:08Z" finished-at="2018-03-23T08:45:22Z">
           <reporter-output>
-            <line>
-              <![CDATA[Username or Password is invalid. Please try again.]]>
-            </line>
-            <line>
-              <![CDATA[Username or Password is invalid. Please try again.]]>
-            </line>
-            <line>
-              <![CDATA[Username or Password is invalid. Please try again.]]>
-            </line>
-            <line>
-              <![CDATA[Username or Password is invalid. Please try again.]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testInvlidLogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestInvalidLogin@38bc8ab5]" name="closeApp" is-config="true" duration-ms="144" started-at="2018-03-23T06:39:58Z" finished-at="2018-03-23T06:39:58Z">
+        </test-method> <!-- createuser -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestCreateUser@23d2a7e8]" name="closeApp" is-config="true" duration-ms="183" started-at="2018-03-23T08:45:22Z" finished-at="2018-03-23T08:45:23Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testInvlidLogin status=SUCCESS method=TestInvalidLogin.testInvlidLogin()[pri:2, instance:script.TestInvalidLogin@38bc8ab5] output=Username or Password is invalid. Please try again.]]]>
+                <![CDATA[[TestResult name=createuser status=SUCCESS method=TestCreateUser.createuser()[pri:3, instance:script.TestCreateUser@23d2a7e8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[testInvlidLoginis PASSED]]>
+              <![CDATA[createuseris PASSED]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- script.TestInvalidLogin -->
-      <class name="script.TestValidLogin">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestValidLogin@687080dc]" name="openApp" is-config="true" duration-ms="12183" started-at="2018-03-23T06:39:08Z" finished-at="2018-03-23T06:39:20Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[192.168.137.1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testValidlogin()[pri:1, instance:script.TestValidLogin@687080dc]" name="testValidlogin" duration-ms="5532" started-at="2018-03-23T06:39:20Z" finished-at="2018-03-23T06:39:26Z">
-          <reporter-output>
-            <line>
-              <![CDATA[HomePage is displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testValidlogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestValidLogin@687080dc]" name="closeApp" is-config="true" duration-ms="488" started-at="2018-03-23T06:39:26Z" finished-at="2018-03-23T06:39:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testValidlogin status=SUCCESS method=TestValidLogin.testValidlogin()[pri:1, instance:script.TestValidLogin@687080dc] output=HomePage is displayed]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[testValidloginis PASSED]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- script.TestValidLogin -->
+      </class> <!-- script.TestCreateUser -->
     </test> <!-- TestOnFirefox -->
-    <test name="TestOnChrome" duration-ms="50069" started-at="2018-03-23T06:39:08Z" finished-at="2018-03-23T06:39:58Z">
-      <class name="script.TestInvalidLogin">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestInvalidLogin@80503]" name="openApp" is-config="true" duration-ms="11063" started-at="2018-03-23T06:39:28Z" finished-at="2018-03-23T06:39:39Z">
+    <test name="TestOnChrome" duration-ms="33762" started-at="2018-03-23T08:44:52Z" finished-at="2018-03-23T08:45:26Z">
+      <class name="script.TestCreateUser">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestCreateUser@4b553d26]" name="openApp" is-config="true" duration-ms="25567" started-at="2018-03-23T08:44:52Z" finished-at="2018-03-23T08:45:18Z">
           <params>
             <param index="0">
               <value>
@@ -147,83 +60,32 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testInvlidLogin()[pri:2, instance:script.TestInvalidLogin@80503]" name="testInvlidLogin" duration-ms="16600" started-at="2018-03-23T06:39:39Z" finished-at="2018-03-23T06:39:55Z">
+        <test-method status="PASS" signature="createuser()[pri:3, instance:script.TestCreateUser@4b553d26]" name="createuser" duration-ms="7795" started-at="2018-03-23T08:45:18Z" finished-at="2018-03-23T08:45:25Z">
           <reporter-output>
-            <line>
-              <![CDATA[Username or Password is invalid. Please try again.]]>
-            </line>
-            <line>
-              <![CDATA[Username or Password is invalid. Please try again.]]>
-            </line>
-            <line>
-              <![CDATA[Username or Password is invalid. Please try again.]]>
-            </line>
-            <line>
-              <![CDATA[Username or Password is invalid. Please try again.]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testInvlidLogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestInvalidLogin@80503]" name="closeApp" is-config="true" duration-ms="2709" started-at="2018-03-23T06:39:56Z" finished-at="2018-03-23T06:39:58Z">
+        </test-method> <!-- createuser -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestCreateUser@4b553d26]" name="closeApp" is-config="true" duration-ms="365" started-at="2018-03-23T08:45:25Z" finished-at="2018-03-23T08:45:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testInvlidLogin status=SUCCESS method=TestInvalidLogin.testInvlidLogin()[pri:2, instance:script.TestInvalidLogin@80503] output=Username or Password is invalid. Please try again.]]]>
+                <![CDATA[[TestResult name=createuser status=SUCCESS method=TestCreateUser.createuser()[pri:3, instance:script.TestCreateUser@4b553d26] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[testInvlidLoginis PASSED]]>
+              <![CDATA[createuseris PASSED]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- script.TestInvalidLogin -->
-      <class name="script.TestValidLogin">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestValidLogin@4b553d26]" name="openApp" is-config="true" duration-ms="8601" started-at="2018-03-23T06:39:08Z" finished-at="2018-03-23T06:39:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[192.168.137.1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testValidlogin()[pri:1, instance:script.TestValidLogin@4b553d26]" name="testValidlogin" duration-ms="8583" started-at="2018-03-23T06:39:17Z" finished-at="2018-03-23T06:39:25Z">
-          <reporter-output>
-            <line>
-              <![CDATA[HomePage is displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testValidlogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestValidLogin@4b553d26]" name="closeApp" is-config="true" duration-ms="2472" started-at="2018-03-23T06:39:25Z" finished-at="2018-03-23T06:39:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testValidlogin status=SUCCESS method=TestValidLogin.testValidlogin()[pri:1, instance:script.TestValidLogin@4b553d26] output=HomePage is displayed]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[testValidloginis PASSED]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- script.TestValidLogin -->
+      </class> <!-- script.TestCreateUser -->
     </test> <!-- TestOnChrome -->
   </suite> <!-- Suite -->
 </testng-results>

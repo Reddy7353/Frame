@@ -1,14 +1,14 @@
-<suite name="Suite" parallel="tests">
-  <test thread-count="5" name="TestOnChrome">
+<suite name="Suite" parallel="tests" >
+  <test name="TestOnChrome">
    <parameter name="ip" value="192.168.137.1"></parameter>
-   <parameter name="browser" value="chrome"></parameter>
+   <parameter name="browser" value="firefox"></parameter>
    <packages>
    <package name="script"></package>
    </packages>
   </test>
-    <test thread-count="5" name="TestOnFirefox">
+    <test  name="TestOnFirefox">
    <parameter name="ip" value="192.168.137.1"></parameter>
-   <parameter name="browser" value="firefox"></parameter>
+   <parameter name="browser" value="chrome"></parameter>
    <packages>
    <package name="script"></package>
    </packages>

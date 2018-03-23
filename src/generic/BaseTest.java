@@ -26,6 +26,7 @@ public abstract class BaseTest implements IAutoConst {
 	@Parameters({"ip","browser"})
 	@BeforeMethod(alwaysRun=true)
 	public  void openApp(String ip,String browser) throws Exception {
+		
 		String appURL=AutoUtil.getPropertyValue(CONFIG_PATH, "URL");
 		String strITO=AutoUtil.getPropertyValue(CONFIG_PATH, "ITO");
 		long ITO=Long.parseLong(strITO);
@@ -35,6 +36,7 @@ public abstract class BaseTest implements IAutoConst {
 	
 		driver=new RemoteWebDriver(url,dc);
 		driver.get(appURL);
+		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(ITO, TimeUnit.SECONDS);
 	}
 	
