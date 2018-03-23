@@ -27,7 +27,7 @@ public class TestCreateUser extends BaseTest{
 		ActiTIMEUserListPage a=new ActiTIMEUserListPage(driver);
 		
 		a.userCreation("Rajavardhan", "Reddy","rajavardhanreddy22@gmail.com", "reddy444", "Reddy7353");
-		a.clickcreateuser();;
+		a.clickcreateuser();
 	}
 	
 }
