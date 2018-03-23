@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\Vishnu Reddy H\Downloads\Framework\Frame\testng.xml</span>
+                    <span>F:\ReddyProject\Frame\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,6 +103,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="script.TestInvalidLogin" hash-for-method="testInvlidLogin">testInvlidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="script.TestInvalidLogin" hash-for-method="testInvlidLogin">testInvlidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="script.TestValidLogin" hash-for-method="testValidlogin">testValidlogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -135,6 +145,13 @@
                   <span class="method-name">testInvlidLogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvlidLogin">
+                  </a> <!-- testInvlidLogin -->
+                  <span class="method-name">testInvlidLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
@@ -150,24 +167,47 @@
                   <span class="method-name">testValidlogin</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidlogin">
+                  </a> <!-- testValidlogin -->
+                  <span class="method-name">testValidlogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Vishnu Reddy H\Downloads\Framework\Frame\testng.xml</span>
+            <span class="header-content">F:\ReddyProject\Frame\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestOnChrome&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;ip&quot; value=&quot;192.168.137.1&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;script&quot;/&gt;
+    &lt;/packages&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;script.TestValidLogin&quot;/&gt;
       &lt;class name=&quot;script.TestInvalidLogin&quot;/&gt;
+      &lt;class name=&quot;script.TestValidLogin&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- TestOnChrome --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestOnFirefox&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;ip&quot; value=&quot;192.168.137.1&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;script&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;script.TestInvalidLogin&quot;/&gt;
+      &lt;class name=&quot;script.TestValidLogin&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestOnFirefox --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -179,7 +219,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">TestOnChrome (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">TestOnFirefox (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,20 +248,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testInvlidLogin')
 data.setCell(0, 2, 'script.TestInvalidLogin')
-data.setCell(0, 3, 14885);
+data.setCell(0, 3, 17322);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testValidlogin')
-data.setCell(1, 2, 'script.TestValidLogin')
-data.setCell(1, 3, 7975);
+data.setCell(1, 1, 'testInvlidLogin')
+data.setCell(1, 2, 'script.TestInvalidLogin')
+data.setCell(1, 3, 16600);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testValidlogin')
+data.setCell(2, 2, 'script.TestValidLogin')
+data.setCell(2, 3, 8583);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testValidlogin')
+data.setCell(3, 2, 'script.TestValidLogin')
+data.setCell(3, 3, 5532);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -244,6 +295,21 @@ return data;
                 <span class="reporter-method-output">HomePage is displayed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testValidlogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">HomePage is displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvlidLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Username or Password is invalid. Please try again.</span>
+                <span class="reporter-method-output">Username or Password is invalid. Please try again.</span>
+                <span class="reporter-method-output">Username or Password is invalid. Please try again.</span>
+                <span class="reporter-method-output">Username or Password is invalid. Please try again.</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
@@ -261,31 +327,55 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">script.TestValidLogin</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">openApp</span>
+                <span class="method-name">openApp(192.168.137.1, chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp(192.168.137.1, firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testValidlogin</span>
-                <span class="method-start">16445 ms</span>
+                <span class="method-start">8601 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidlogin</span>
+                <span class="method-start">12183 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp([TestResult name=testValidlogin status=SUCCESS method=TestValidLogin.testValidlogin()[pri:1, instanc...)</span>
-                <span class="method-start">24422 ms</span>
+                <span class="method-start">17187 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=testValidlogin status=SUCCESS method=TestValidLogin.testValidlogin()[pri:1, instanc...)</span>
+                <span class="method-start">17719 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">script.TestInvalidLogin</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">openApp</span>
-                <span class="method-start">26738 ms</span>
+                <span class="method-name">openApp(192.168.137.1, firefox)</span>
+                <span class="method-start">18208 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">openApp(192.168.137.1, chrome)</span>
+                <span class="method-start">19660 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testInvlidLogin</span>
-                <span class="method-start">33609 ms</span>
+                <span class="method-start">30723 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInvlidLogin</span>
+                <span class="method-start">32522 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeApp([TestResult name=testInvlidLogin status=SUCCESS method=TestInvalidLogin.testInvlidLogin()[pri:2, ins...)</span>
-                <span class="method-start">48497 ms</span>
+                <span class="method-start">47329 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">closeApp([TestResult name=testInvlidLogin status=SUCCESS method=TestInvalidLogin.testInvlidLogin()[pri:2, ins...)</span>
+                <span class="method-start">49847 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

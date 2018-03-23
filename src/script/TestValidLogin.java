@@ -22,6 +22,7 @@ public class TestValidLogin extends BaseTest {
 		l.clickLogin();
 		
 		EnterTimeTrackPage e=new EnterTimeTrackPage(driver);
+		//Thread.sleep(1000);
 		e.verifyHomePageIsDisplayed(driver, title);
 		
 	}

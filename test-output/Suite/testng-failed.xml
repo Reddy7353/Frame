@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="TestOnFirefox(failed)" parallel="tests">
+    <parameter name="ip" value="192.168.137.1"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
+      <class name="script.TestValidLogin">
+        <methods>
+          <include name="testValidlogin"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.TestValidLogin -->
       <class name="script.TestInvalidLogin">
         <methods>
           <include name="openApp"/>
@@ -11,5 +20,25 @@
         </methods>
       </class> <!-- script.TestInvalidLogin -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- TestOnFirefox(failed) -->
+  <test thread-count="5" name="TestOnChrome(failed)" parallel="tests">
+    <parameter name="ip" value="192.168.137.1"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="script.TestValidLogin">
+        <methods>
+          <include name="testValidlogin"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.TestValidLogin -->
+      <class name="script.TestInvalidLogin">
+        <methods>
+          <include name="openApp"/>
+          <include name="testInvlidLogin"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.TestInvalidLogin -->
+    </classes>
+  </test> <!-- TestOnChrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

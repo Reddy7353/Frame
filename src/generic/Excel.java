@@ -6,7 +6,6 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class Excel {
-
 	
 	public static String getValue(String path,String sheet,int r,int c) {
 		String v="";
