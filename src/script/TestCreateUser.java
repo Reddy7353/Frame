@@ -23,11 +23,19 @@ public class TestCreateUser extends BaseTest{
 		
 		EnterTimeTrackPage e=new EnterTimeTrackPage(driver);
 		e.clickUsers();
-		
+		int rc = Excel.getRowCount(XL_PATH, "CreateUser");
+		System.out.println(rc);
 		ActiTIMEUserListPage a=new ActiTIMEUserListPage(driver);
 		
-		a.userCreation("Rajavardhan", "Reddy","rajavardhanreddy22@gmail.com", "reddy444", "Reddy7353");
+	for(int i=1;i<=rc;i++) {
+		String fn = Excel.getValue(XL_PATH, "CreateUser", i, 0);
+		String ln=Excel.getValue(XL_PATH, "CreateUser", i, 1);
+		String email= Excel.getValue(XL_PATH, "CreateUser", i, 2);
+		String pass= Excel.getValue(XL_PATH, "CreateUser", i, 3);
+		String uname=Excel.getValue(XL_PATH, "CreateUser", i, 4);
+		a.userCreation(fn, ln, email, pass, uname);
 		a.clickcreateuser();
 	}
 	
+ }
 }

@@ -10,7 +10,7 @@ import page.LoginPage;
 public class TestValidLogin extends BaseTest {
 
 	
-	@Test(priority=1,enabled=false)
+	@Test(priority=1)
 	public void testValidlogin() {
 		
 		String un = Excel.getValue(XL_PATH, "ValidLogin", 1, 0);

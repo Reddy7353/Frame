@@ -3,7 +3,7 @@
 <suite name="Failed suite [Suite]" parallel="tests">
   <test thread-count="5" name="TestOnChrome(failed)" parallel="tests">
     <parameter name="ip" value="192.168.137.1"/>
-    <parameter name="browser" value="firefox"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="script.TestCreateUser">
         <methods>
@@ -12,6 +12,20 @@
           <include name="closeApp"/>
         </methods>
       </class> <!-- script.TestCreateUser -->
+      <class name="script.TestInvalidLogin">
+        <methods>
+          <include name="openApp"/>
+          <include name="testInvlidLogin"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.TestInvalidLogin -->
+      <class name="script.TestValidLogin">
+        <methods>
+          <include name="testValidlogin"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- script.TestValidLogin -->
     </classes>
   </test> <!-- TestOnChrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->
