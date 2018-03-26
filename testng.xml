@@ -1,4 +1,4 @@
-<suite name="Suite" parallel="tests" >
+<suite name="Suite">
   <test name="TestOnChrome">
    <parameter name="ip" value="192.168.137.1"></parameter>
    <parameter name="browser" value="chrome"></parameter>
@@ -6,11 +6,11 @@
    <package name="script"></package>
    </packages>
   </test>
-   <!--  <test  name="TestOnFirefox">
+    <test  name="TestOnFirefox">
    <parameter name="ip" value="192.168.137.1"></parameter>
    <parameter name="browser" value="firefox"></parameter>
    <packages>
    <package name="script"></package>
    </packages>
-  </test> -->
+  </test>
 </suite>
