@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" parallel="tests">
-  <test thread-count="5" name="TestOnChrome(failed)" parallel="tests">
-    <parameter name="ip" value="192.168.137.1"/>
-    <parameter name="browser" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="script.TestCreateUser">
-        <methods>
-          <include name="openApp"/>
-          <include name="createuser"/>
-          <include name="closeApp"/>
-        </methods>
-      </class> <!-- script.TestCreateUser -->
-      <class name="script.TestInvalidLogin">
-        <methods>
-          <include name="openApp"/>
-          <include name="testInvlidLogin"/>
-          <include name="closeApp"/>
-        </methods>
-      </class> <!-- script.TestInvalidLogin -->
       <class name="script.TestValidLogin">
         <methods>
           <include name="testValidlogin"/>
@@ -27,5 +11,5 @@
         </methods>
       </class> <!-- script.TestValidLogin -->
     </classes>
-  </test> <!-- TestOnChrome(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
