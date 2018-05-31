@@ -27,5 +27,6 @@
 	<classpathentry kind="lib" path="jar/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="lib" path="jar/selenium-server-standalone-3.8.1.jar"/>
 	<classpathentry kind="lib" path="jar/selenium-server-standalone-3.11.0.jar"/>
+	<classpathentry kind="lib" path="jar/selenium-server-standalone-3.12.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

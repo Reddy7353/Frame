@@ -50,12 +50,12 @@
       <![CDATA[createuseris FAILED]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="172931" started-at="2018-03-26T18:59:09Z" finished-at="2018-03-26T19:02:02Z">
+  <suite name="Suite" duration-ms="159268" started-at="2018-03-27T08:42:11Z" finished-at="2018-03-27T08:44:50Z">
     <groups>
     </groups>
-    <test name="TestOnChrome" duration-ms="58615" started-at="2018-03-26T18:59:09Z" finished-at="2018-03-26T19:00:07Z">
+    <test name="TestOnChrome" duration-ms="65566" started-at="2018-03-27T08:42:11Z" finished-at="2018-03-27T08:43:16Z">
       <class name="script.TestCreateUser">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestCreateUser@80503]" name="openApp" is-config="true" duration-ms="6555" started-at="2018-03-26T18:59:47Z" finished-at="2018-03-26T18:59:54Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestCreateUser@80503]" name="openApp" is-config="true" duration-ms="8500" started-at="2018-03-27T08:42:52Z" finished-at="2018-03-27T08:43:00Z">
           <params>
             <param index="0">
               <value>
@@ -71,11 +71,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="createuser()[pri:3, instance:script.TestCreateUser@80503]" name="createuser" duration-ms="11672" started-at="2018-03-26T18:59:54Z" finished-at="2018-03-26T19:00:05Z">
+        <test-method status="PASS" signature="createuser()[pri:3, instance:script.TestCreateUser@80503]" name="createuser" duration-ms="14108" started-at="2018-03-27T08:43:00Z" finished-at="2018-03-27T08:43:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createuser -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestCreateUser@80503]" name="closeApp" is-config="true" duration-ms="2099" started-at="2018-03-26T19:00:05Z" finished-at="2018-03-26T19:00:07Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestCreateUser@80503]" name="closeApp" is-config="true" duration-ms="2090" started-at="2018-03-27T08:43:14Z" finished-at="2018-03-27T08:43:16Z">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@
         </test-method> <!-- closeApp -->
       </class> <!-- script.TestCreateUser -->
       <class name="script.TestInvalidLogin">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestInvalidLogin@4b553d26]" name="openApp" is-config="true" duration-ms="5997" started-at="2018-03-26T18:59:25Z" finished-at="2018-03-26T18:59:31Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestInvalidLogin@4b553d26]" name="openApp" is-config="true" duration-ms="8911" started-at="2018-03-27T08:42:27Z" finished-at="2018-03-27T08:42:35Z">
           <params>
             <param index="0">
               <value>
@@ -107,7 +107,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testInvlidLogin()[pri:2, instance:script.TestInvalidLogin@4b553d26]" name="testInvlidLogin" duration-ms="13847" started-at="2018-03-26T18:59:31Z" finished-at="2018-03-26T18:59:45Z">
+        <test-method status="PASS" signature="testInvlidLogin()[pri:2, instance:script.TestInvalidLogin@4b553d26]" name="testInvlidLogin" duration-ms="14085" started-at="2018-03-27T08:42:35Z" finished-at="2018-03-27T08:42:50Z">
           <reporter-output>
             <line>
               <![CDATA[Username or Password is invalid. Please try again.]]>
@@ -123,7 +123,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testInvlidLogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestInvalidLogin@4b553d26]" name="closeApp" is-config="true" duration-ms="2317" started-at="2018-03-26T18:59:45Z" finished-at="2018-03-26T18:59:47Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestInvalidLogin@4b553d26]" name="closeApp" is-config="true" duration-ms="2112" started-at="2018-03-27T08:42:50Z" finished-at="2018-03-27T08:42:52Z">
           <params>
             <param index="0">
               <value>
@@ -139,7 +139,7 @@
         </test-method> <!-- closeApp -->
       </class> <!-- script.TestInvalidLogin -->
       <class name="script.TestValidLogin">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestValidLogin@69a3d1d]" name="openApp" is-config="true" duration-ms="10195" started-at="2018-03-26T18:59:09Z" finished-at="2018-03-26T18:59:19Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestValidLogin@69a3d1d]" name="openApp" is-config="true" duration-ms="9340" started-at="2018-03-27T08:42:11Z" finished-at="2018-03-27T08:42:20Z">
           <params>
             <param index="0">
               <value>
@@ -155,14 +155,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testValidlogin()[pri:1, instance:script.TestValidLogin@69a3d1d]" name="testValidlogin" duration-ms="3725" started-at="2018-03-26T18:59:19Z" finished-at="2018-03-26T18:59:23Z">
+        <test-method status="PASS" signature="testValidlogin()[pri:1, instance:script.TestValidLogin@69a3d1d]" name="testValidlogin" duration-ms="4209" started-at="2018-03-27T08:42:20Z" finished-at="2018-03-27T08:42:24Z">
           <reporter-output>
             <line>
               <![CDATA[HomePage is displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- testValidlogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestValidLogin@69a3d1d]" name="closeApp" is-config="true" duration-ms="2174" started-at="2018-03-26T18:59:23Z" finished-at="2018-03-26T18:59:25Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestValidLogin@69a3d1d]" name="closeApp" is-config="true" duration-ms="2158" started-at="2018-03-27T08:42:24Z" finished-at="2018-03-27T08:42:27Z">
           <params>
             <param index="0">
               <value>
@@ -178,9 +178,9 @@
         </test-method> <!-- closeApp -->
       </class> <!-- script.TestValidLogin -->
     </test> <!-- TestOnChrome -->
-    <test name="TestOnFirefox" duration-ms="114288" started-at="2018-03-26T19:00:07Z" finished-at="2018-03-26T19:02:02Z">
+    <test name="TestOnFirefox" duration-ms="93636" started-at="2018-03-27T08:43:16Z" finished-at="2018-03-27T08:44:50Z">
       <class name="script.TestCreateUser">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestCreateUser@687080dc]" name="openApp" is-config="true" duration-ms="10862" started-at="2018-03-26T19:01:23Z" finished-at="2018-03-26T19:01:34Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestCreateUser@687080dc]" name="openApp" is-config="true" duration-ms="15104" started-at="2018-03-27T08:44:26Z" finished-at="2018-03-27T08:44:42Z">
           <params>
             <param index="0">
               <value>
@@ -196,23 +196,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="FAIL" signature="createuser()[pri:3, instance:script.TestCreateUser@687080dc]" name="createuser" duration-ms="4781" started-at="2018-03-26T19:01:34Z" finished-at="2018-03-26T19:01:39Z">
+        <test-method status="FAIL" signature="createuser()[pri:3, instance:script.TestCreateUser@687080dc]" name="createuser" duration-ms="8280" started-at="2018-03-27T08:44:42Z" finished-at="2018-03-27T08:44:50Z">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Element <div id="createUserDiv"> is not clickable at point (1142,189.5) because another element <img id="muar" src="/img/default/dialogs/exitconfirm/shade.png?hash=1388610907"> obscures it
+              <![CDATA[Element <div id="createUserDiv"> is not clickable at point (1142,183.5) because another element <img id="muar" src="/img/default/dialogs/exitconfirm/shade.png?hash=1388610907"> obscures it
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:15.31Z'
 System info: host: 'LAPTOP-G3HTDHLD', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 404, moz:profile: C:\Users\Vishnu Reddy H\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: edf106cc-0d64-4856-a7bb-a64...}
-Session ID: edf106cc-0d64-4856-a7bb-a64a264caa1a]]>
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3044, moz:profile: C:\Users\Vishnu Reddy H\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: 8ff065e2-fdfc-407f-bc79-eee...}
+Session ID: 8ff065e2-fdfc-407f-bc79-eeec74245482]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <div id="createUserDiv"> is not clickable at point (1142,189.5) because another element <img id="muar" src="/img/default/dialogs/exitconfirm/shade.png?hash=1388610907"> obscures it
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <div id="createUserDiv"> is not clickable at point (1142,183.5) because another element <img id="muar" src="/img/default/dialogs/exitconfirm/shade.png?hash=1388610907"> obscures it
 Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:15.31Z'
 System info: host: 'LAPTOP-G3HTDHLD', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 404, moz:profile: C:\Users\Vishnu Reddy H\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: edf106cc-0d64-4856-a7bb-a64...}
-Session ID: edf106cc-0d64-4856-a7bb-a64a264caa1a
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3044, moz:profile: C:\Users\Vishnu Reddy H\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: 8ff065e2-fdfc-407f-bc79-eee...}
+Session ID: 8ff065e2-fdfc-407f-bc79-eeec74245482
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -262,7 +262,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createuser -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestCreateUser@687080dc]" name="closeApp" is-config="true" duration-ms="22653" started-at="2018-03-26T19:01:39Z" finished-at="2018-03-26T19:02:02Z">
+        <test-method status="FAIL" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestCreateUser@687080dc]" name="closeApp" is-config="true" duration-ms="186" started-at="2018-03-27T08:44:50Z" finished-at="2018-03-27T08:44:50Z">
           <params>
             <param index="0">
               <value>
@@ -270,6 +270,60 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[: 
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:15.31Z'
+System info: host: 'LAPTOP-G3HTDHLD', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3044, moz:profile: C:\Users\Vishnu Reddy H\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: 8ff065e2-fdfc-407f-bc79-eee...}
+Session ID: 8ff065e2-fdfc-407f-bc79-eeec74245482]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: : 
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:33:15.31Z'
+System info: host: 'LAPTOP-G3HTDHLD', ip: '192.168.137.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3044, moz:profile: C:\Users\Vishnu Reddy H\App..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, webdriver.remote.sessionid: 8ff065e2-fdfc-407f-bc79-eee...}
+Session ID: 8ff065e2-fdfc-407f-bc79-eeec74245482
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:435)
+at generic.BaseTest.closeApp(BaseTest.java:56)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
           <reporter-output>
             <line>
               <![CDATA[createuseris FAILED]]>
@@ -278,7 +332,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- closeApp -->
       </class> <!-- script.TestCreateUser -->
       <class name="script.TestInvalidLogin">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestInvalidLogin@23d2a7e8]" name="openApp" is-config="true" duration-ms="13856" started-at="2018-03-26T19:00:50Z" finished-at="2018-03-26T19:01:04Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestInvalidLogin@23d2a7e8]" name="openApp" is-config="true" duration-ms="14135" started-at="2018-03-27T08:43:50Z" finished-at="2018-03-27T08:44:04Z">
           <params>
             <param index="0">
               <value>
@@ -294,7 +348,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testInvlidLogin()[pri:2, instance:script.TestInvalidLogin@23d2a7e8]" name="testInvlidLogin" duration-ms="16923" started-at="2018-03-26T19:01:04Z" finished-at="2018-03-26T19:01:21Z">
+        <test-method status="PASS" signature="testInvlidLogin()[pri:2, instance:script.TestInvalidLogin@23d2a7e8]" name="testInvlidLogin" duration-ms="19398" started-at="2018-03-27T08:44:04Z" finished-at="2018-03-27T08:44:23Z">
           <reporter-output>
             <line>
               <![CDATA[Username or Password is invalid. Please try again.]]>
@@ -310,7 +364,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- testInvlidLogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestInvalidLogin@23d2a7e8]" name="closeApp" is-config="true" duration-ms="2446" started-at="2018-03-26T19:01:21Z" finished-at="2018-03-26T19:01:23Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestInvalidLogin@23d2a7e8]" name="closeApp" is-config="true" duration-ms="3124" started-at="2018-03-27T08:44:23Z" finished-at="2018-03-27T08:44:26Z">
           <params>
             <param index="0">
               <value>
@@ -326,7 +380,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- closeApp -->
       </class> <!-- script.TestInvalidLogin -->
       <class name="script.TestValidLogin">
-        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestValidLogin@7a9273a8]" name="openApp" is-config="true" duration-ms="36911" started-at="2018-03-26T19:00:08Z" finished-at="2018-03-26T19:00:44Z">
+        <test-method status="PASS" signature="openApp(java.lang.String, java.lang.String)[pri:0, instance:script.TestValidLogin@7a9273a8]" name="openApp" is-config="true" duration-ms="24821" started-at="2018-03-27T08:43:16Z" finished-at="2018-03-27T08:43:41Z">
           <params>
             <param index="0">
               <value>
@@ -342,14 +396,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method status="PASS" signature="testValidlogin()[pri:1, instance:script.TestValidLogin@7a9273a8]" name="testValidlogin" duration-ms="3540" started-at="2018-03-26T19:00:44Z" finished-at="2018-03-26T19:00:48Z">
+        <test-method status="PASS" signature="testValidlogin()[pri:1, instance:script.TestValidLogin@7a9273a8]" name="testValidlogin" duration-ms="4337" started-at="2018-03-27T08:43:41Z" finished-at="2018-03-27T08:43:46Z">
           <reporter-output>
             <line>
               <![CDATA[HomePage is displayed]]>
             </line>
           </reporter-output>
         </test-method> <!-- testValidlogin -->
-        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestValidLogin@7a9273a8]" name="closeApp" is-config="true" duration-ms="2292" started-at="2018-03-26T19:00:48Z" finished-at="2018-03-26T19:00:50Z">
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:script.TestValidLogin@7a9273a8]" name="closeApp" is-config="true" duration-ms="4218" started-at="2018-03-27T08:43:46Z" finished-at="2018-03-27T08:43:50Z">
           <params>
             <param index="0">
               <value>
